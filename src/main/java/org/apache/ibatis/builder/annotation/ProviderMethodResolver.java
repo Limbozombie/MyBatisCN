@@ -56,7 +56,8 @@ public interface ProviderMethodResolver {
    */
   default Method resolveMethod(ProviderContext context) {
     // 找出同名方法
-    List<Method> sameNameMethods = Arrays.stream(getClass().getMethods())
+    //this 是指调用该方法的实体对象，而非 ProviderMethodResolver 接口
+    List<Method> sameNameMethods = Arrays.stream(this.getClass().getMethods())
         .filter(m -> m.getName().equals(context.getMapperMethod().getName()))
         .collect(Collectors.toList());
 

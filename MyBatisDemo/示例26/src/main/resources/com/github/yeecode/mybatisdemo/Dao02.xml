@@ -15,7 +15,7 @@
 
 <mapper namespace="com.github.yeecode.mybatisdemo.dao.Dao02">
 
-    <resultMap id="userMap" type="User" autoMapping="true">
+    <resultMap id="userMap" type="com.github.yeecode.mybatisdemo.model.User" autoMapping="true">
         <collection property="taskList" resultSet="taskRecord" resultMap="taskMap" />
     </resultMap>
 

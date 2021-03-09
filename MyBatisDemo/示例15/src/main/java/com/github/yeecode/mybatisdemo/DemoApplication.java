@@ -1,14 +1,11 @@
 package com.github.yeecode.mybatisdemo;
 
 import com.github.yeecode.mybatisdemo.model.User;
-import ognl.Ognl;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import ognl.Ognl;
 
-@SpringBootApplication
 public class DemoApplication {
     public static void main(String[] args) {
         try {
@@ -22,8 +19,8 @@ public class DemoApplication {
             String userName = userMap.get("user2").getName();
             System.out.println(userName);
 
-            readAndWriteProps(userMap);
-            callFunction();
+//            readAndWriteProps(userMap);
+//            callFunction();
             runAfterParse(userMap);
         } catch (Exception ex) {
             ex.printStackTrace();

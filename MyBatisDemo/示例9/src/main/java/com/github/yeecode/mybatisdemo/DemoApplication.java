@@ -3,17 +3,8 @@ package com.github.yeecode.mybatisdemo;
 import com.github.yeecode.mybatisdemo.model.ProxyHandler;
 import com.github.yeecode.mybatisdemo.model.User;
 import com.github.yeecode.mybatisdemo.model.UserInterface;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 import java.lang.reflect.Proxy;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
 
-@SpringBootApplication
 public class DemoApplication {
     public static void main(String[] args) throws Exception {
         // 创建被代理对象

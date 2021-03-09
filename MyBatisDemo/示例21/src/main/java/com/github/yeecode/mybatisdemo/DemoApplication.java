@@ -17,19 +17,19 @@ public class DemoApplication {
     public static void main(String[] args) {
         try {
             // 继承Serializable对象的序列化和反序列化
-            demo01();
+//            demo01();
 
             // 继承Externalizable对象的序列化和反序列化
             demo02();
 
             // writeReplace方法测试
-            demo03();
-
-            // readResolve方法测试
-            demo04();
-
-            // writeExternal/readExternal/writeReplace/readResolve执行顺序测试
-            demo05();
+//            demo03();
+//
+//            // readResolve方法测试
+//            demo04();
+//
+//            // writeExternal/readExternal/writeReplace/readResolve执行顺序测试
+//            demo05();
 
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -58,7 +58,7 @@ public class DemoApplication {
     private static void demo02() throws Exception {
         System.out.println("run demo02:");
         UserModel02 userModel02 = new UserModel02();
-        userModel02.setId(1);
+        userModel02.setId(6);
         userModel02.setName("易哥");
 
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("m2.tempdata"));

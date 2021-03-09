@@ -1,8 +1,5 @@
 package com.github.yeecode.mybatisdemo;
 
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
 public class DemoApplication {
     // 创建了两个ThreadLocal变量
     private static ThreadLocal<Integer> threadLocalNumber = new ThreadLocal<>();
